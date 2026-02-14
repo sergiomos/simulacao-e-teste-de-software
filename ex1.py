@@ -42,7 +42,7 @@ def calcular_estatisticas(notas):
 def normalizar_nota(notas, nota_maxima):
     fator_de_normalizacao = 10
     return [nota * nota_maxima / fator_de_normalizacao for nota in notas]
-=======
+
 def calcular_media(notas):
     if not len(notas):
         raise ValueError("Não há notas para calcular a média")
@@ -86,4 +86,3 @@ def calcular_estatisticas(notas):
 def normalizar_nota(notas, nota_maxima):
     fator_de_normalizacao = 10
     return [nota * nota_maxima / fator_de_normalizacao for nota in notas]
->>>>>>> e18422d2e6a78b1ee895886574cf93f79414a826
