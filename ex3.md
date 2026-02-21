@@ -31,10 +31,9 @@
 | Peso de 1.1kg a 5Kg           | N        | N        | N        | S        | S        | S        | N        | N        | N           | -       |
 | Peso de 5.1 a 20 kg           | N        | N        | N        | N        | N        | N        | S        | S        | S           | -       |
 | Peso acima de 20 Kg           | N        | N        | N        | N        | N        | N        | N        | N        | N           | -       |
-| Valor do Pedido > 200         | N        | N        | N        | N        | N        | N        | N        | N        | N           | -       |
+| Valor do Pedido > 200         | N        | N        | N        | N        | N        | N        | N        | N        | N           | S       |
 | Mesma região                  | S        | N        | N        | S        | N        | N        | N        | S        | N           | -       |
 | Outra região                  | N        | S        | N        | N        | S        | N        | N        | N        | S           | -       |
 | Internacional                 | N        | N        | S        | N        | N        | S        | S        | N        | N           | -       |
 | **Resultado**                 |          |          |          |          |          |          |          |          |             |         |
-| Valor do Frete                | R$ 10,00 | R$ 15,00 | R$ 20,00 | R$ 15,00 | R$ 22,50 | R$ 30,00 | R$ 50,00 | R$ 25,00 | R$ 37,50,00 | R$ 0,00 |
-
+| Valor do Frete                | R$ 10,00 | R$ 15,00 | R$ 20,00 | R$ 15,00 | R$ 22,50 | R$ 30,00 | R$ 50,00 | R$ 25,00 | R$ 37,50 | R$ 0,00 |
