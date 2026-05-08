@@ -3,9 +3,11 @@ class Estoque:
         self._produtos = {}
 
     # --- GREEN ---
-    # Implementacao minima para o teste passar.
+    # Quantidade > 0 obrigatoria; produto existente incrementa.
     def adicionar_produto(self, nome, quantidade):
-        self._produtos[nome] = quantidade
+        if quantidade <= 0:
+            raise ValueError("quantidade deve ser positiva")
+        self._produtos[nome] = self._produtos.get(nome, 0) + quantidade
 
     def consultar_quantidade(self, nome):
         return self._produtos.get(nome, 0)
