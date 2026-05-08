@@ -12,6 +12,26 @@ class TestAdicionarProduto(unittest.TestCase):
         e.adicionar_produto("caneta", 10)
         self.assertEqual(e.consultar_quantidade("caneta"), 10)
 
+    # --- RED ---
+    # Adicionar produto ja existente deve INCREMENTAR a quantidade, nao substituir.
+    def test_adicionar_produto_existente_incrementa(self):
+        e = Estoque()
+        e.adicionar_produto("caneta", 10)
+        e.adicionar_produto("caneta", 5)
+        self.assertEqual(e.consultar_quantidade("caneta"), 15)
+
+    # --- RED ---
+    # Quantidade <= 0 nao e permitida.
+    def test_adicionar_quantidade_zero_invalida(self):
+        e = Estoque()
+        with self.assertRaises(ValueError):
+            e.adicionar_produto("caneta", 0)
+
+    def test_adicionar_quantidade_negativa_invalida(self):
+        e = Estoque()
+        with self.assertRaises(ValueError):
+            e.adicionar_produto("caneta", -3)
+
 
 if __name__ == "__main__":
     unittest.main()
