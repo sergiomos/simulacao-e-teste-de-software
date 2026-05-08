@@ -1,17 +1,23 @@
 class Estoque:
+    """Controle simples de quantidades de produtos por nome."""
+
     def __init__(self):
         self._produtos = {}
 
-    # --- GREEN ---
-    # Quantidade > 0 obrigatoria; produto existente incrementa.
-    def adicionar_produto(self, nome, quantidade):
+    # --- REFACTOR ---
+    # Centraliza a validacao de quantidade positiva em um helper unico,
+    # eliminando duplicacao entre adicionar_produto e remover_produto.
+    @staticmethod
+    def _exigir_quantidade_positiva(quantidade):
         if quantidade <= 0:
             raise ValueError("quantidade deve ser positiva")
+
+    def adicionar_produto(self, nome, quantidade):
+        self._exigir_quantidade_positiva(quantidade)
         self._produtos[nome] = self._produtos.get(nome, 0) + quantidade
 
     def remover_produto(self, nome, quantidade):
-        if quantidade <= 0:
-            raise ValueError("quantidade deve ser positiva")
+        self._exigir_quantidade_positiva(quantidade)
         disponivel = self._produtos.get(nome, 0)
         if disponivel == 0:
             raise ValueError(f"produto '{nome}' nao existe no estoque")
