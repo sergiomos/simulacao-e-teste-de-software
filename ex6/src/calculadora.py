@@ -36,8 +36,7 @@ class Calculadora:
     def potencia(self, base, expoente):
         self._validar_numeros(base, expoente)
         resultado = base ** expoente
-        # BUG intencional: registra "*" no historico ao inves de "**"
-        self.repositorio.salvar(f"{base} * {expoente} = {resultado}")
+        self.repositorio.salvar(f"{base} ** {expoente} = {resultado}")
         self.resultado = resultado
         return resultado
 
