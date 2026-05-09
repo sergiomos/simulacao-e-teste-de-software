@@ -1,0 +1,31 @@
+{
+    "tests_by_mangled_function_name": {
+        "calculadora.x_dividir": [
+            "test_calculadora.py::TestCalculadora::test_dividir_por_zero",
+            "test_calculadora.py::TestCalculadora::test_dividir"
+        ],
+        "calculadora.x_eh_par": [
+            "test_calculadora.py::TestCalculadora::test_eh_par_true",
+            "test_calculadora.py::TestCalculadora::test_eh_par_false"
+        ],
+        "calculadora.x_multiplicar": [
+            "test_calculadora.py::TestCalculadora::test_multiplicar"
+        ],
+        "calculadora.x_somar": [
+            "test_calculadora.py::TestCalculadora::test_somar"
+        ],
+        "calculadora.x_subtrair": [
+            "test_calculadora.py::TestCalculadora::test_subtrair"
+        ]
+    },
+    "duration_by_test": {
+        "test_calculadora.py::TestCalculadora::test_dividir": 0.0006172919997879944,
+        "test_calculadora.py::TestCalculadora::test_dividir_por_zero": 0.000474234999728651,
+        "test_calculadora.py::TestCalculadora::test_eh_par_false": 0.00039950600012161885,
+        "test_calculadora.py::TestCalculadora::test_eh_par_true": 0.00041168799998558825,
+        "test_calculadora.py::TestCalculadora::test_multiplicar": 0.0004143340006521612,
+        "test_calculadora.py::TestCalculadora::test_somar": 0.000380831000256876,
+        "test_calculadora.py::TestCalculadora::test_subtrair": 0.00044695499946101336
+    },
+    "stats_time": 0.26600239400000003
+}

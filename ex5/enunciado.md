@@ -37,13 +37,6 @@ python -m unittest test_calculadora -v
 python test_mutantes.py
 
 # Mutacao automatizada
-pip install mutmut
-mutmut run --paths-to-mutate=calculadora.py
+mutmut run
 mutmut results
 ```
-
-## Observações
-
-- Os mutantes manuais devem ter **nível de complexidade compatível com universitário**: pequenas alterações pontuais (um operador ou uma constante por mutante), entre 4 e 6 mutantes no total.
-- O foco é a **comparação** — não há necessidade de cobrir todos os tipos de mutação possíveis manualmente; o `mutmut` faz isso por nós.
-- O relatório deve discutir por que certos mutantes do `mutmut` sobrevivem mesmo com a suíte passando — o que isso revela sobre a qualidade dos testes?

@@ -1,0 +1,48 @@
+{
+    "exit_code_by_key": {
+        "calculadora.x_somar__mutmut_1": 1,
+        "calculadora.x_subtrair__mutmut_1": 1,
+        "calculadora.x_multiplicar__mutmut_1": 1,
+        "calculadora.x_dividir__mutmut_1": 1,
+        "calculadora.x_dividir__mutmut_2": 1,
+        "calculadora.x_dividir__mutmut_3": 0,
+        "calculadora.x_dividir__mutmut_4": 0,
+        "calculadora.x_dividir__mutmut_5": 0,
+        "calculadora.x_dividir__mutmut_6": 1,
+        "calculadora.x_eh_par__mutmut_1": 1,
+        "calculadora.x_eh_par__mutmut_2": 1,
+        "calculadora.x_eh_par__mutmut_3": 1,
+        "calculadora.x_eh_par__mutmut_4": 1
+    },
+    "durations_by_key": {
+        "calculadora.x_multiplicar__mutmut_1": 0.06963,
+        "calculadora.x_somar__mutmut_1": 0.123884,
+        "calculadora.x_eh_par__mutmut_1": 0.076171,
+        "calculadora.x_subtrair__mutmut_1": 0.102187,
+        "calculadora.x_eh_par__mutmut_2": 0.106265,
+        "calculadora.x_eh_par__mutmut_3": 0.086796,
+        "calculadora.x_eh_par__mutmut_4": 0.080408,
+        "calculadora.x_dividir__mutmut_1": 0.102256,
+        "calculadora.x_dividir__mutmut_2": 0.068775,
+        "calculadora.x_dividir__mutmut_3": 0.1123,
+        "calculadora.x_dividir__mutmut_5": 0.092945,
+        "calculadora.x_dividir__mutmut_4": 0.067592,
+        "calculadora.x_dividir__mutmut_6": 0.06714
+    },
+    "type_check_error_by_key": {},
+    "estimated_durations_by_key": {
+        "calculadora.x_somar__mutmut_1": 0.000380831000256876,
+        "calculadora.x_multiplicar__mutmut_1": 0.0004143340006521612,
+        "calculadora.x_subtrair__mutmut_1": 0.00044695499946101336,
+        "calculadora.x_eh_par__mutmut_1": 0.0008111940001072071,
+        "calculadora.x_eh_par__mutmut_2": 0.0008111940001072071,
+        "calculadora.x_eh_par__mutmut_3": 0.0008111940001072071,
+        "calculadora.x_eh_par__mutmut_4": 0.0008111940001072071,
+        "calculadora.x_dividir__mutmut_1": 0.0010915269995166454,
+        "calculadora.x_dividir__mutmut_2": 0.0010915269995166454,
+        "calculadora.x_dividir__mutmut_3": 0.0010915269995166454,
+        "calculadora.x_dividir__mutmut_4": 0.0010915269995166454,
+        "calculadora.x_dividir__mutmut_5": 0.0010915269995166454,
+        "calculadora.x_dividir__mutmut_6": 0.0010915269995166454
+    }
+}
