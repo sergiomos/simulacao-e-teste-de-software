@@ -1,4 +1,13 @@
-from calculadora import somar, subtrair, multiplicar, dividir
+import pytest
+
+from calculadora import (
+    somar,
+    subtrair,
+    multiplicar,
+    dividir,
+    potencia,
+    raiz_quadrada,
+)
 
 
 def test_somar():
@@ -27,3 +36,29 @@ def test_multiplicar_por_zero():
 
 def test_dividir_basico():
     assert dividir(10, 2) == 5
+
+
+def test_dividir_por_zero():
+    with pytest.raises(ValueError):
+        dividir(10, 0)
+
+
+def test_potencia():
+    assert potencia(2, 10) == 1024
+
+
+def test_potencia_expoente_zero():
+    assert potencia(7, 0) == 1
+
+
+def test_raiz_quadrada():
+    assert raiz_quadrada(9) == 3
+
+
+def test_raiz_quadrada_zero():
+    assert raiz_quadrada(0) == 0
+
+
+def test_raiz_quadrada_negativa():
+    with pytest.raises(ValueError):
+        raiz_quadrada(-4)
