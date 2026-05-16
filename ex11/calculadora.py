@@ -43,3 +43,4 @@ def percentual(valor, percent):
 def eh_par(n):
     """Retorna True se n for par, False caso contrario."""
     return n % 2 == 0
+    

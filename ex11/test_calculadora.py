@@ -62,14 +62,21 @@ def test_divisao_resultado_exato():
     assert divisao(10, 2) == 5.0
 
 # TODO: adicionar teste para divisao por zero
-# TODO: adicionar teste para resultado nao inteiro
+def test_divisao_por_zero():
+    with pytest.raises(ValueError):
+        divisao(10, 0)
 
+# TODO: adicionar teste para resultado nao inteiro
+def test_divisao_resultado_nao_inteiro():
+    assert divisao(7, 2) == 3.5 
 
 # ----------------------------------------------------------------
 # percentual -- NAO COBERTA
 # ----------------------------------------------------------------
 
 # TODO: adicionar testes para percentual
+def test_percentual_valor_positivo():
+    assert percentual(200, 10) == 20.0
 
 
 # ----------------------------------------------------------------
@@ -77,3 +84,5 @@ def test_divisao_resultado_exato():
 # ----------------------------------------------------------------
 
 # TODO: adicionar testes para eh_par
+def test_eh_par_numero_par():
+    assert eh_par(4) is True
