@@ -94,7 +94,7 @@ def test_percentual_valor_positivo():
     assert percentual(200, 10) == 20.0
 
 def test_percentual_valor_negativo():
-    assert percentual(-100, 20) == -20.0    
+    assert percentual(-100, 20) == -20.0
 
 
 # ----------------------------------------------------------------
