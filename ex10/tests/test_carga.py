@@ -1,8 +1,3 @@
-"""Teste de CARGA - throughput sustentado.
-
-Meta: throughput > 2000 req/s durante a janela.
-"""
-
 import os
 import threading
 import time
