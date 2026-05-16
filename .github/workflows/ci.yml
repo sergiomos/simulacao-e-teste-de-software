@@ -31,8 +31,7 @@ jobs:
         run: cd ex11 && pytest --cov=calculadora --cov-report=term-missing --cov-report=xml --cov-fail-under=80
 
       - name: Publicar relatorio de cobertura
-        if: always()
-        uses: actions/upload-artifact@v4
+        uses: [actions/upload-artifact](https://github.com/actions/upload-artifact)@v4
         with:
           name: coverage-report
           path: coverage.xml
