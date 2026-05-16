@@ -1,64 +1,79 @@
+"""
+Testes para o modulo calculadora.
+ATENCAO: esta suite esta incompleta -- a cobertura atual e de ~65%.
+O pipeline de CI ira falhar na etapa de cobertura (minimo exigido: 80%).
+Sua tarefa: identificar as funcoes nao cobertas e escrever os testes
+que faltam ate o pipeline ficar verde.
+"""
+
 import pytest
-
-from calculadora import (
-    somar,
-    subtrair,
-    multiplicar,
-    dividir,
-    potencia,
-    raiz_quadrada,
-)
+from calculadora import soma, subtracao, multiplicacao, divisao, percentual, eh_par
 
 
-def test_somar():
-    assert somar(2, 3) == 5
+# ----------------------------------------------------------------
+# soma
+# ----------------------------------------------------------------
+
+def test_soma_inteiros_positivos():
+    assert soma(3, 4) == 7
 
 
-def test_somar_negativos():
-    assert somar(-2, -3) == -5
+def test_soma_com_numero_negativo():
+    assert soma(-1, 5) == 4
 
 
-def test_subtrair():
-    assert subtrair(10, 4) == 6
+def test_soma_dois_negativos():
+    assert soma(-2, -3) == -5
 
 
-def test_subtrair_resultado_negativo():
-    assert subtrair(2, 5) == -3
+# ----------------------------------------------------------------
+# subtracao
+# ----------------------------------------------------------------
+
+def test_subtracao_resultado_positivo():
+    assert subtracao(10, 3) == 7
 
 
-def test_multiplicar():
-    assert multiplicar(6, 7) == 42
+def test_subtracao_resultado_negativo():
+    assert subtracao(2, 8) == -6
 
 
-def test_multiplicar_por_zero():
-    assert multiplicar(99, 0) == 0
+# ----------------------------------------------------------------
+# multiplicacao
+# ----------------------------------------------------------------
+
+def test_multiplicacao_inteiros():
+    assert multiplicacao(4, 5) == 20
 
 
-def test_dividir_basico():
-    assert dividir(10, 2) == 5
+def test_multiplicacao_por_zero():
+    assert multiplicacao(7, 0) == 0
 
 
-def test_dividir_por_zero():
-    with pytest.raises(ValueError):
-        dividir(10, 0)
+def test_multiplicacao_negativos():
+    assert multiplicacao(-3, -4) == 12
 
 
-def test_potencia():
-    assert potencia(2, 10) == 1024
+# ----------------------------------------------------------------
+# divisao -- INCOMPLETA: faltam casos importantes
+# ----------------------------------------------------------------
+
+def test_divisao_resultado_exato():
+    assert divisao(10, 2) == 5.0
+
+# TODO: adicionar teste para divisao por zero
+# TODO: adicionar teste para resultado nao inteiro
 
 
-def test_potencia_expoente_zero():
-    assert potencia(7, 0) == 1
+# ----------------------------------------------------------------
+# percentual -- NAO COBERTA
+# ----------------------------------------------------------------
+
+# TODO: adicionar testes para percentual
 
 
-def test_raiz_quadrada():
-    assert raiz_quadrada(9) == 3
+# ----------------------------------------------------------------
+# eh_par -- NAO COBERTA
+# ----------------------------------------------------------------
 
-
-def test_raiz_quadrada_zero():
-    assert raiz_quadrada(0) == 0
-
-
-def test_raiz_quadrada_negativa():
-    with pytest.raises(ValueError):
-        raiz_quadrada(-4)
+# TODO: adicionar testes para eh_par
