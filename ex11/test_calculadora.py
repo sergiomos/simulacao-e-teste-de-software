@@ -68,7 +68,7 @@ def test_divisao_por_zero():
 
 
 def test_divisao_resultado_nao_inteiro():
-    assert divisao(7, 2) == 3.5 
+    assert divisao(7, 2) == 3.5
 
 
 # ----------------------------------------------------------------
