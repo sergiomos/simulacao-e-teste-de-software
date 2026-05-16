@@ -22,13 +22,13 @@ jobs:
       - name: Instalar dependencias
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r ./ex11/requirements.txt
 
       - name: Lint (flake8)
-        run: flake8 calculadora.py test_calculadora.py --max-line-length=100
+        run: flake8 ./ex11/calculadora.py ./ex11/test_calculadora.py --max-line-length=100
 
       - name: Testes com cobertura
-        run: pytest --cov=calculadora --cov-report=term-missing --cov-report=xml --cov-fail-under=80
+        run: cd ex11 && pytest --cov=calculadora --cov-report=term-missing --cov-report=xml --cov-fail-under=80
 
       - name: Publicar relatorio de cobertura
         if: always()

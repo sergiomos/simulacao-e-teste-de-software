@@ -2,7 +2,6 @@
 
 **Atividade 09 — Sistema Task Manager**
 *Testes orientados a objetos e componentes*
-*1º Semestre de 2026*
 
 ## Objetivo
 
